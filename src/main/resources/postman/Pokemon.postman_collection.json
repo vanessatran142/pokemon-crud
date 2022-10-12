@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "bba985e6-f179-4ddb-bf34-997a23b8a4d7",
+		"name": "Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get pokemons page 1 and size 20",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Get pokemons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pokemon?page=1&size=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pokemon"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "sort",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Oct 2022 01:25:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_embedded\": {\n        \"pokemon\": [\n            {\n                \"orderNumber\": 16,\n                \"name\": \"Pidgey\",\n                \"type1\": \"Normal\",\n                \"type2\": \"Flying\",\n                \"total\": 251,\n                \"hp\": 40,\n                \"attack\": 45,\n                \"defense\": 40,\n                \"spAttack\": 35,\n                \"spDefense\": 35,\n                \"speed\": 56,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/21\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/21\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 17,\n                \"name\": \"Pidgeotto\",\n                \"type1\": \"Normal\",\n                \"type2\": \"Flying\",\n                \"total\": 349,\n                \"hp\": 63,\n                \"attack\": 60,\n                \"defense\": 55,\n                \"spAttack\": 50,\n                \"spDefense\": 50,\n                \"speed\": 71,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/22\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/22\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 18,\n                \"name\": \"Pidgeot\",\n                \"type1\": \"Normal\",\n                \"type2\": \"Flying\",\n                \"total\": 479,\n                \"hp\": 83,\n                \"attack\": 80,\n                \"defense\": 75,\n                \"spAttack\": 70,\n                \"spDefense\": 70,\n                \"speed\": 101,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/23\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/23\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 18,\n                \"name\": \"PidgeotMega Pidgeot\",\n                \"type1\": \"Normal\",\n                \"type2\": \"Flying\",\n                \"total\": 579,\n                \"hp\": 83,\n                \"attack\": 80,\n                \"defense\": 80,\n                \"spAttack\": 135,\n                \"spDefense\": 80,\n                \"speed\": 121,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/24\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/24\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 19,\n                \"name\": \"Rattata\",\n                \"type1\": \"Normal\",\n                \"type2\": \"\",\n                \"total\": 253,\n                \"hp\": 30,\n                \"attack\": 56,\n                \"defense\": 35,\n                \"spAttack\": 25,\n                \"spDefense\": 35,\n                \"speed\": 72,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/25\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/25\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 20,\n                \"name\": \"Raticate\",\n                \"type1\": \"Normal\",\n                \"type2\": \"\",\n                \"total\": 413,\n                \"hp\": 55,\n                \"attack\": 81,\n                \"defense\": 60,\n                \"spAttack\": 50,\n                \"spDefense\": 70,\n                \"speed\": 97,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/26\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/26\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 21,\n                \"name\": \"Spearow\",\n                \"type1\": \"Normal\",\n                \"type2\": \"Flying\",\n                \"total\": 262,\n                \"hp\": 40,\n                \"attack\": 60,\n                \"defense\": 30,\n                \"spAttack\": 31,\n                \"spDefense\": 31,\n                \"speed\": 70,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/27\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/27\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 22,\n                \"name\": \"Fearow\",\n                \"type1\": \"Normal\",\n                \"type2\": \"Flying\",\n                \"total\": 442,\n                \"hp\": 65,\n                \"attack\": 90,\n                \"defense\": 65,\n                \"spAttack\": 61,\n                \"spDefense\": 61,\n                \"speed\": 100,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/28\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/28\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 23,\n                \"name\": \"Ekans\",\n                \"type1\": \"Poison\",\n                \"type2\": \"\",\n                \"total\": 288,\n                \"hp\": 35,\n                \"attack\": 60,\n                \"defense\": 44,\n                \"spAttack\": 40,\n                \"spDefense\": 54,\n                \"speed\": 55,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/29\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/29\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 24,\n                \"name\": \"Arbok\",\n                \"type1\": \"Poison\",\n                \"type2\": \"\",\n                \"total\": 438,\n                \"hp\": 60,\n                \"attack\": 85,\n                \"defense\": 69,\n                \"spAttack\": 65,\n                \"spDefense\": 79,\n                \"speed\": 80,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/30\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/30\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 25,\n                \"name\": \"Pikachu\",\n                \"type1\": \"Electric\",\n                \"type2\": \"\",\n                \"total\": 320,\n                \"hp\": 35,\n                \"attack\": 55,\n                \"defense\": 40,\n                \"spAttack\": 50,\n                \"spDefense\": 50,\n                \"speed\": 90,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/31\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/31\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 26,\n                \"name\": \"Raichu\",\n                \"type1\": \"Electric\",\n                \"type2\": \"\",\n                \"total\": 485,\n                \"hp\": 60,\n                \"attack\": 90,\n                \"defense\": 55,\n                \"spAttack\": 90,\n                \"spDefense\": 80,\n                \"speed\": 110,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/32\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/32\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 27,\n                \"name\": \"Sandshrew\",\n                \"type1\": \"Ground\",\n                \"type2\": \"\",\n                \"total\": 300,\n                \"hp\": 50,\n                \"attack\": 75,\n                \"defense\": 85,\n                \"spAttack\": 20,\n                \"spDefense\": 30,\n                \"speed\": 40,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/33\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/33\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 28,\n                \"name\": \"Sandslash\",\n                \"type1\": \"Ground\",\n                \"type2\": \"\",\n                \"total\": 450,\n                \"hp\": 75,\n                \"attack\": 100,\n                \"defense\": 110,\n                \"spAttack\": 45,\n                \"spDefense\": 55,\n                \"speed\": 65,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/34\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/34\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 29,\n                \"name\": \"Nidoran♀\",\n                \"type1\": \"Poison\",\n                \"type2\": \"\",\n                \"total\": 275,\n                \"hp\": 55,\n                \"attack\": 47,\n                \"defense\": 52,\n                \"spAttack\": 40,\n                \"spDefense\": 40,\n                \"speed\": 41,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/35\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/35\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 30,\n                \"name\": \"Nidorina\",\n                \"type1\": \"Poison\",\n                \"type2\": \"\",\n                \"total\": 365,\n                \"hp\": 70,\n                \"attack\": 62,\n                \"defense\": 67,\n                \"spAttack\": 55,\n                \"spDefense\": 55,\n                \"speed\": 56,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/36\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/36\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 31,\n                \"name\": \"Nidoqueen\",\n                \"type1\": \"Poison\",\n                \"type2\": \"Ground\",\n                \"total\": 505,\n                \"hp\": 90,\n                \"attack\": 92,\n                \"defense\": 87,\n                \"spAttack\": 75,\n                \"spDefense\": 85,\n                \"speed\": 76,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/37\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/37\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 32,\n                \"name\": \"Nidoran♂\",\n                \"type1\": \"Poison\",\n                \"type2\": \"\",\n                \"total\": 273,\n                \"hp\": 46,\n                \"attack\": 57,\n                \"defense\": 40,\n                \"spAttack\": 40,\n                \"spDefense\": 40,\n                \"speed\": 50,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/38\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/38\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 33,\n                \"name\": \"Nidorino\",\n                \"type1\": \"Poison\",\n                \"type2\": \"\",\n                \"total\": 365,\n                \"hp\": 61,\n                \"attack\": 72,\n                \"defense\": 57,\n                \"spAttack\": 55,\n                \"spDefense\": 55,\n                \"speed\": 65,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/39\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/39\"\n                    }\n                }\n            },\n            {\n                \"orderNumber\": 34,\n                \"name\": \"Nidoking\",\n                \"type1\": \"Poison\",\n                \"type2\": \"Ground\",\n                \"total\": 505,\n                \"hp\": 81,\n                \"attack\": 102,\n                \"defense\": 77,\n                \"spAttack\": 85,\n                \"spDefense\": 75,\n                \"speed\": 85,\n                \"generation\": 1,\n                \"legendary\": false,\n                \"_links\": {\n                    \"self\": {\n                        \"href\": \"http://localhost:8080/pokemon/40\"\n                    },\n                    \"pokemon\": {\n                        \"href\": \"http://localhost:8080/pokemon/40\"\n                    }\n                }\n            }\n        ]\n    },\n    \"_links\": {\n        \"first\": {\n            \"href\": \"http://localhost:8080/pokemon?page=0&size=20\"\n        },\n        \"prev\": {\n            \"href\": \"http://localhost:8080/pokemon?page=0&size=20\"\n        },\n        \"self\": {\n            \"href\": \"http://localhost:8080/pokemon?page=1&size=20\"\n        },\n        \"next\": {\n            \"href\": \"http://localhost:8080/pokemon?page=2&size=20\"\n        },\n        \"last\": {\n            \"href\": \"http://localhost:8080/pokemon?page=39&size=20\"\n        },\n        \"profile\": {\n            \"href\": \"http://localhost:8080/profile/pokemon\"\n        },\n        \"search\": {\n            \"href\": \"http://localhost:8080/pokemon/search\"\n        }\n    },\n    \"page\": {\n        \"size\": 20,\n        \"totalElements\": 800,\n        \"totalPages\": 40,\n        \"number\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create a pokemon",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Create a pokemon",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"orderNumber\": 1,\n    \"name\": \"Bulbasaur\",\n    \"type1\": \"Grass\",\n    \"type2\": \"Poison\",\n    \"total\": 318,\n    \"hp\": 45,\n    \"attack\": 49,\n    \"defense\": 49,\n    \"spAttack\": 65,\n    \"spDefense\": 65,\n    \"speed\": 65,\n    \"generation\": 1,\n    \"legendary\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pokemon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pokemon"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Location",
+							"value": "http://localhost:8080/pokemon/801"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Oct 2022 01:26:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderNumber\": 1,\n    \"name\": \"Bulbasaur\",\n    \"type1\": \"Grass\",\n    \"type2\": \"Poison\",\n    \"total\": 318,\n    \"hp\": 45,\n    \"attack\": 49,\n    \"defense\": 49,\n    \"spAttack\": 65,\n    \"spDefense\": 65,\n    \"speed\": 65,\n    \"generation\": 1,\n    \"legendary\": false,\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/pokemon/801\"\n        },\n        \"pokemon\": {\n            \"href\": \"http://localhost:8080/pokemon/801\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update a pokemon",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Update a pokemon",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"orderNumber\": 111,\n    \"name\": \"Bulbasaur\",\n    \"type1\": \"Grass\",\n    \"type2\": \"Poison\",\n    \"total\": 318,\n    \"hp\": 45,\n    \"attack\": 49,\n    \"defense\": 49,\n    \"spAttack\": 65,\n    \"spDefense\": 65,\n    \"speed\": 65,\n    \"generation\": 1,\n    \"legendary\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pokemon/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pokemon",
+								"21"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Location",
+							"value": "http://localhost:8080/pokemon/21"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 12 Oct 2022 01:27:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderNumber\": 111,\n    \"name\": \"Bulbasaur\",\n    \"type1\": \"Grass\",\n    \"type2\": \"Poison\",\n    \"total\": 318,\n    \"hp\": 45,\n    \"attack\": 49,\n    \"defense\": 49,\n    \"spAttack\": 65,\n    \"spDefense\": 65,\n    \"speed\": 65,\n    \"generation\": 1,\n    \"legendary\": false,\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/pokemon/21\"\n        },\n        \"pokemon\": {\n            \"href\": \"http://localhost:8080/pokemon/21\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update a pokemon partially",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Vanessa Tran\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pokemon/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pokemon",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a pokemon",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

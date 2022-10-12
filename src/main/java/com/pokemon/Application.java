@@ -7,7 +7,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
 @SpringBootApplication
@@ -27,7 +30,7 @@ public class Application implements CommandLineRunner {
      * @throws Exception
      */
     @Override
-    public void run(String... strings) throws Exception {
+    public void run(String... strings) {
         String line = "";
         String splitBy = ",";
         try {
@@ -57,9 +60,6 @@ public class Application implements CommandLineRunner {
                     );
                 }
                 isFirstLine = false;
-
-//                System.out.println(properties);// use comma as separator
-              //  System.out.println("Employee [First Name=" + employee[0] + ", Last Name=" + employee[1] + ", Designation=" + employee[2] + ", Contact=" + employee[3] + ", Salary= " + employee[4] + ", City= " + employee[5] + "]");
             }
         } catch (IOException e) {
             e.printStackTrace();
