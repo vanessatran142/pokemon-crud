@@ -95,3 +95,11 @@ DELETE /pokemon/{id}
 
 
 <img width="1306" alt="image" src="https://user-images.githubusercontent.com/66429881/195229361-a9bba205-1d88-44dc-83d9-5944922d0959.png">
+
+
+## Running the application
+### Local testing
+```
+mvn clean install
+mvn spring-boot:run
+```
